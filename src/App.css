@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+
+.navi {
+  background: rgb(235, 230, 228);
+  opacity: none;
+  position: sticky;
+  /* width: 2000px; */
+  margin: 0;
+  /* border: 3px solid rgb(211, 78, 78); */
+  /* height: 150px; */
+  text-align: center;
+}
+
+.navi img{
+  width: 130px;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  
+}
+
+/* 영화소개박스들 */
+.first{ 
+  margin-top: 50px;
+  margin-left: 40px;
+  width: 200px;
+  height: auto;
+  /* border: 1px solid black; */
+  font-family: 'Noto Sans KR', sans-serif;
+  text-align: center;
+  background-attachment: fixed;
+  background: rgba(0, 0, 0, alpha);
+  
+}
+
+.second{
+  margin-top: 50px;
+  margin-left: 40px;
+  width: 200px;
+  height: auto;
+  /* opacity: 0.8; */
+  font-family: 'Noto Sans KR', sans-serif;
+  text-align: center;
+  background-attachment: fixed;
+}
+
+.first img{
+  width: 200px;
+  height: 280px;
+  border-radius: 20px;
+}
+
+.second img{
+  width: 200px;
+  height: 280px;
+  border-radius: 20px;
+}
+
+.btn{
+  background-color: yellow;
+  border-radius: 10%;
+}
+
+.btn:hover{
+  background: red;
+}
+
+.btn:focus{
+  background: red;
+  box-shadow: 2px 2px;
+}
+
+.contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 50px 30px 60px;
+  /* border: 1px solid black; */
+}
+
+.contents1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 50px 30px 60px;
+  /* border: 1px solid red; */
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  height: 1px;
+  margin-left: 70px;
+  /* margin-top: 70px; */
+}
