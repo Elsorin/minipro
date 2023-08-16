@@ -1,5 +1,5 @@
 import '../App.css';
-import logo from '../imgpng/logo.png';
+import logo from '../imgpng/logo.png'
 
 const Navi = () => {
   return (

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+
 .ticketing{
   box-sizing: border-box;
   /* background: lightgray; */
@@ -23,7 +25,7 @@
   height: 80px;
   background: gray;
   clip-path: polygon(0 0, 100% 0, 94% 100%, 6% 100%);
-  margin-top: 10%;
+  margin-top: 5%;
   display: flex;
   justify-content: center;
   
@@ -54,12 +56,10 @@
 .seat-grid{
   display: grid;
   grid-template-columns: repeat(10, 5fr);
-  margin-top: 200px;
+  margin-top: 100px;
   row-gap: 30px;
   
 }
-
-
 
 .seat:focus{
   background: yellow;
@@ -69,3 +69,29 @@
   background: yellow;
 }
 
+.ticketingInfo{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.info{
+  margin-top: 10px;
+  border: 1px solid red;
+  font-family: 'Noto Sans KR', sans-serif;
+  margin-bottom: 150px;
+  font-size: larger;
+  /* background: ; */
+}
+
+.ticketingBtn{
+  border: 1px solid blue;
+  background: rgb(255, 155, 155);
+  border-radius: 20px;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  font-family: 'Noto Sans KR', sans-serif;
+  margin-top: 200px;
+  position: absolute;
+}

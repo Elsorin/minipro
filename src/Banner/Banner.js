@@ -1,33 +1,35 @@
 import { useEffect, useState } from 'react';
 import '../Banner/Banner.css';
-import dosiku from '../imgpng/dosiku.png';
+import dosiku from './dosiku.png';
+import mealkit from './mealkit.png';
+import ohjummu from './ohjeammu.png';
 
 const Banner = () => {
-  return( 
-    <div className='banner'>
-      <img src={dosiku} alt="Dosiku Banner" />
-    </div>
-  );
-}
+  const bannerImages = [
+    dosiku,
+    mealkit,
+    ohjummu,
+  ];
 
-function BannerChange() {
-  const [bannerUrl, setBannerUrl] = useState('../imgpng/dosiku.png');
-  
+  const [imageIndex, setImageIndex] = useState(0);
+
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setBannerUrl('../imgpng/ohjummu.png');
-    }, 3000);
+    const timer = setInterval(() => {
+      setImageIndex((prevIndex) => (prevIndex + 1) % bannerImages.length);
+    }, 4000);
   
-    return () => {
-      clearTimeout(timer);
-    };
-  }, []);
-  
-  return( 
-    <div className='img-container'>
-      <img src={bannerUrl} alt="Changing Banner" className='changing-banner' />
-    </div>
-  );
-}
+
+  return () => clearInterval(timer);
+}, []);
+
+return (
+  <div className='banner-ad'>
+    <img src={bannerImages[imageIndex]} alt='Banner Ad' />
+  </div>
+);
+
+};
+
+
 
 export default Banner;
